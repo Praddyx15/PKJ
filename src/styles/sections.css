@@ -1514,3 +1514,194 @@
         padding: var(--space-3xl) 0;
     }
 }
+
+/* ==========================================================================
+   EXTRA SMALL SCREEN BREAKPOINTS (480px and below)
+   ========================================================================== */
+
+@media (max-width: 480px) {
+
+    /* Global container */
+    .container {
+        padding: 0 var(--space-md) !important;
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: var(--text-2xl) !important;
+    }
+
+    .hero-eyebrow {
+        font-size: var(--text-xs) !important;
+    }
+
+    .hero-content {
+        padding: var(--space-3xl) var(--space-md) var(--space-xl) !important;
+    }
+
+    /* Section headers */
+    .section-title {
+        font-size: var(--text-xl) !important;
+    }
+
+    .section-tag {
+        font-size: 10px !important;
+    }
+
+    /* About */
+    .about-image-frame {
+        max-height: 220px !important;
+    }
+
+    .about-text p {
+        font-size: var(--text-sm) !important;
+    }
+
+    .lead-text {
+        font-size: var(--text-base) !important;
+    }
+
+    /* Collections */
+    .collections-grid {
+        grid-template-columns: 1fr !important;
+        gap: var(--space-md) !important;
+    }
+
+    .collection-card {
+        max-width: 100% !important;
+    }
+
+    .card-content {
+        padding: var(--space-md) !important;
+    }
+
+    /* Features */
+    .features-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .feature-card {
+        padding: var(--space-md) !important;
+    }
+
+    /* Bridal */
+    .bridal-image-wrapper {
+        max-height: 250px !important;
+    }
+
+    .bridal-features {
+        max-width: 100% !important;
+        padding: 0 var(--space-sm) !important;
+    }
+
+    /* Location */
+    .map-wrapper iframe {
+        height: 200px !important;
+    }
+
+    .hours-day {
+        padding: var(--space-xs) var(--space-sm) !important;
+        max-width: 45% !important;
+    }
+
+    .day-label {
+        font-size: var(--text-xs) !important;
+    }
+
+    .day-time {
+        font-size: var(--text-xs) !important;
+    }
+
+    .info-card {
+        padding: var(--space-md) !important;
+    }
+
+    .info-card-title {
+        font-size: var(--text-base) !important;
+    }
+
+    /* Contact */
+    .contact-form {
+        padding: var(--space-md) !important;
+    }
+
+    .form-input {
+        padding: var(--space-sm) !important;
+        font-size: var(--text-sm) !important;
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--space-2xl) 0 var(--space-lg) !important;
+    }
+
+    .footer-logo .logo-name {
+        font-size: var(--text-lg) !important;
+    }
+
+    .footer-tagline {
+        font-size: var(--text-sm) !important;
+    }
+}
+
+/* Ultra small screens (375px and below - iPhone SE) */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.5rem !important;
+    }
+
+    .section-title {
+        font-size: var(--text-lg) !important;
+    }
+
+    .about-image-frame {
+        max-height: 180px !important;
+    }
+
+    .about-badge {
+        padding: var(--space-sm) var(--space-md) !important;
+    }
+
+    .badge-number {
+        font-size: var(--text-lg) !important;
+    }
+
+    .hours-grid {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .hours-day {
+        max-width: 200px !important;
+        width: 100% !important;
+    }
+
+    .bridal-features li {
+        font-size: var(--text-xs) !important;
+    }
+
+    .btn {
+        padding: var(--space-sm) var(--space-md) !important;
+        font-size: var(--text-xs) !important;
+    }
+}
+
+/* Extra small screens (320px) */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 1.25rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: var(--text-xs) !important;
+    }
+
+    .about-text p,
+    .bridal-text {
+        font-size: var(--text-xs) !important;
+    }
+
+    .section-title {
+        font-size: var(--text-base) !important;
+    }
+}
