@@ -1,0 +1,26 @@
+{
+  "name": "pk-jewellers",
+  "version": "1.0.0",
+  "description": "PK Jewellers - Luxury Jewellery Showroom Website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "jewellery",
+    "luxury",
+    "gold",
+    "diamond",
+    "silver"
+  ],
+  "author": "PK Jewellers",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.4.11"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5"
+  }
+}
