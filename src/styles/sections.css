@@ -1206,37 +1206,45 @@
 /* Mobile: About Section */
 @media (max-width: 768px) {
     .about-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-xl);
+        grid-template-columns: 1fr !important;
+        gap: var(--space-xl) !important;
     }
 
     .about-visual {
-        max-width: 100%;
-        order: 1;
+        max-width: 100% !important;
+        order: 1 !important;
+        text-align: center;
     }
 
     .about-content {
-        order: 2;
+        order: 2 !important;
     }
 
     .about-image-frame {
-        aspect-ratio: 16/9;
-        max-height: 280px;
+        aspect-ratio: 16/9 !important;
+        max-height: 280px !important;
+        overflow: hidden;
+    }
+
+    .about-image {
+        background-position: center !important;
     }
 
     .about-badge {
-        position: relative;
-        right: auto;
-        bottom: auto;
-        margin: var(--space-md) auto 0;
-        display: inline-flex;
-        flex-direction: row;
+        position: relative !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        margin: var(--space-md) auto 0 !important;
+        display: inline-flex !important;
+        flex-direction: row !important;
         gap: var(--space-sm);
         padding: var(--space-md) var(--space-xl);
     }
 
     .badge-number {
-        font-size: var(--text-xl);
+        font-size: var(--text-xl) !important;
+        margin-bottom: 0 !important;
     }
 
     .badge-text {
@@ -1244,13 +1252,15 @@
     }
 
     .about-features {
-        flex-direction: column;
+        flex-direction: column !important;
         gap: var(--space-md);
         align-items: flex-start;
     }
 
-    .frame-accent {
-        display: none;
+    .frame-accent,
+    .frame-accent-1,
+    .frame-accent-2 {
+        display: none !important;
     }
 }
 
@@ -1330,52 +1340,61 @@
 /* Mobile: Bridal Section */
 @media (max-width: 768px) {
     .bridal-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-xl);
+        grid-template-columns: 1fr !important;
+        gap: var(--space-xl) !important;
     }
 
     .bridal-content {
-        order: 2;
-        text-align: center;
+        order: 2 !important;
+        text-align: center !important;
     }
 
     .bridal-visual {
-        order: 1;
-        max-width: 100%;
+        order: 1 !important;
+        max-width: 100% !important;
+        display: block !important;
     }
 
     .bridal-image-wrapper {
-        aspect-ratio: 4/3;
-        max-height: 350px;
+        aspect-ratio: 4/3 !important;
+        max-height: 300px !important;
+        width: 100% !important;
+        overflow: hidden;
+    }
+
+    .bridal-image {
+        height: 100% !important;
+        width: 100% !important;
+        background-size: cover !important;
+        background-position: center !important;
     }
 
     .bridal-text {
-        font-size: var(--text-base);
+        font-size: var(--text-base) !important;
     }
 
     .bridal-features {
-        text-align: left;
-        max-width: 320px;
-        margin: 0 auto var(--space-xl);
+        text-align: left !important;
+        max-width: 320px !important;
+        margin: 0 auto var(--space-xl) !important;
     }
 
     .bridal-features li {
-        font-size: var(--text-sm);
+        font-size: var(--text-sm) !important;
         gap: var(--space-sm);
     }
 
     /* Hide floating accent on mobile */
-    .bridal-accent {
-        display: none;
-    }
-
-    .bridal-floating-orb {
-        display: none;
+    .bridal-accent,
+    .bridal-floating-orb,
+    .bridal-visual::before,
+    .bridal-visual::after {
+        display: none !important;
     }
 
     .bridal .btn {
-        width: 100%;
-        justify-content: center;
+        width: 100% !important;
+        justify-content: center !important;
     }
 }
 
@@ -1391,58 +1410,63 @@
     }
 
     .hours-banner {
-        padding: var(--space-lg);
-        text-align: center;
+        padding: var(--space-lg) !important;
+        text-align: center !important;
     }
 
     .hours-banner-content {
-        flex-direction: column;
-        gap: var(--space-md);
-        align-items: center;
+        flex-direction: column !important;
+        gap: var(--space-md) !important;
+        align-items: center !important;
     }
 
     .hours-banner-title {
-        font-size: var(--text-lg);
-        margin-bottom: var(--space-sm);
+        font-size: var(--text-lg) !important;
+        margin-bottom: var(--space-sm) !important;
+        width: 100% !important;
     }
 
-    .hours-banner .hours-grid {
-        flex-direction: row;
-        gap: var(--space-sm);
-        width: 100%;
-        max-width: 100%;
+    .hours-banner .hours-grid,
+    .hours-grid {
+        flex-direction: row !important;
+        gap: var(--space-sm) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        justify-content: center !important;
     }
 
     .hours-day {
-        padding: var(--space-sm) var(--space-md);
-        flex: 1;
+        padding: var(--space-sm) var(--space-md) !important;
+        flex: 1 !important;
+        max-width: 150px !important;
     }
 
     .day-label {
-        font-size: var(--text-sm);
+        font-size: var(--text-sm) !important;
     }
 
     .day-time {
-        font-size: var(--text-sm);
+        font-size: var(--text-sm) !important;
     }
 
     .hours-banner-footer {
-        flex-direction: column;
-        gap: var(--space-xs);
-        text-align: center;
-        margin-top: var(--space-md);
+        flex-direction: column !important;
+        gap: var(--space-xs) !important;
+        text-align: center !important;
+        margin-top: var(--space-md) !important;
+        width: 100% !important;
     }
 
     .hours-tagline {
-        font-size: var(--text-sm);
+        font-size: var(--text-sm) !important;
     }
 
     .hallmark-tagline {
-        font-size: var(--text-xs);
+        font-size: var(--text-xs) !important;
     }
 
     .info-card {
-        padding: var(--space-lg);
+        padding: var(--space-lg) !important;
     }
 }
 
