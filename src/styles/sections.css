@@ -1207,30 +1207,50 @@
 @media (max-width: 768px) {
     .about-grid {
         grid-template-columns: 1fr;
-        gap: var(--space-2xl);
+        gap: var(--space-xl);
     }
 
     .about-visual {
         max-width: 100%;
+        order: 1;
+    }
+
+    .about-content {
+        order: 2;
     }
 
     .about-image-frame {
-        aspect-ratio: 16/12;
+        aspect-ratio: 16/9;
+        max-height: 280px;
     }
 
     .about-badge {
-        right: var(--space-md);
-        bottom: var(--space-md);
-        padding: var(--space-md) var(--space-lg);
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin: var(--space-md) auto 0;
+        display: inline-flex;
+        flex-direction: row;
+        gap: var(--space-sm);
+        padding: var(--space-md) var(--space-xl);
     }
 
     .badge-number {
-        font-size: var(--text-2xl);
+        font-size: var(--text-xl);
+    }
+
+    .badge-text {
+        font-size: var(--text-xs);
     }
 
     .about-features {
         flex-direction: column;
         gap: var(--space-md);
+        align-items: flex-start;
+    }
+
+    .frame-accent {
+        display: none;
     }
 }
 
@@ -1311,11 +1331,12 @@
 @media (max-width: 768px) {
     .bridal-grid {
         grid-template-columns: 1fr;
-        gap: var(--space-2xl);
+        gap: var(--space-xl);
     }
 
     .bridal-content {
         order: 2;
+        text-align: center;
     }
 
     .bridal-visual {
@@ -1324,16 +1345,37 @@
     }
 
     .bridal-image-wrapper {
-        aspect-ratio: 16/12;
+        aspect-ratio: 4/3;
+        max-height: 350px;
     }
 
     .bridal-text {
         font-size: var(--text-base);
     }
 
+    .bridal-features {
+        text-align: left;
+        max-width: 320px;
+        margin: 0 auto var(--space-xl);
+    }
+
     .bridal-features li {
         font-size: var(--text-sm);
         gap: var(--space-sm);
+    }
+
+    /* Hide floating accent on mobile */
+    .bridal-accent {
+        display: none;
+    }
+
+    .bridal-floating-orb {
+        display: none;
+    }
+
+    .bridal .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -1350,39 +1392,53 @@
 
     .hours-banner {
         padding: var(--space-lg);
+        text-align: center;
     }
 
     .hours-banner-content {
         flex-direction: column;
-        gap: var(--space-lg);
-        text-align: center;
+        gap: var(--space-md);
+        align-items: center;
     }
 
     .hours-banner-title {
-        font-size: var(--text-xl);
+        font-size: var(--text-lg);
+        margin-bottom: var(--space-sm);
     }
 
-    .hours-grid {
-        flex-direction: column;
+    .hours-banner .hours-grid {
+        flex-direction: row;
         gap: var(--space-sm);
+        width: 100%;
+        max-width: 100%;
     }
 
     .hours-day {
-        padding: var(--space-md);
+        padding: var(--space-sm) var(--space-md);
+        flex: 1;
     }
 
     .day-label {
-        font-size: var(--text-base);
+        font-size: var(--text-sm);
     }
 
     .day-time {
-        font-size: var(--text-lg);
+        font-size: var(--text-sm);
     }
 
     .hours-banner-footer {
         flex-direction: column;
-        gap: var(--space-sm);
+        gap: var(--space-xs);
         text-align: center;
+        margin-top: var(--space-md);
+    }
+
+    .hours-tagline {
+        font-size: var(--text-sm);
+    }
+
+    .hallmark-tagline {
+        font-size: var(--text-xs);
     }
 
     .info-card {
