@@ -1,0 +1,180 @@
+/* ==========================================================================
+   MOBILE CRITICAL OVERRIDES - LOADED LAST FOR HIGHEST PRIORITY
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+    /* About Section - Fix image and badge positioning */
+    .about-grid {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .about-visual {
+        order: 1 !important;
+        width: 100% !important;
+        text-align: center !important;
+        position: relative !important;
+    }
+
+    .about-content {
+        order: 2 !important;
+    }
+
+    .about-image-frame {
+        aspect-ratio: 16/9 !important;
+        max-height: 250px !important;
+        overflow: hidden !important;
+        margin-bottom: 0 !important;
+    }
+
+    .about-image {
+        width: 100% !important;
+        height: 100% !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    /* Move badge below image */
+    .about-badge {
+        position: static !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        margin: 16px auto 0 !important;
+        padding: 12px 24px !important;
+    }
+
+    .badge-number {
+        display: inline !important;
+        margin-bottom: 0 !important;
+        font-size: 1.5rem !important;
+    }
+
+    .badge-text {
+        display: inline !important;
+    }
+
+    .frame-accent,
+    .frame-accent-1,
+    .frame-accent-2 {
+        display: none !important;
+    }
+
+    /* Bridal Section - Fix image display and hide accent */
+    .bridal-grid {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .bridal-content {
+        order: 2 !important;
+        text-align: center !important;
+    }
+
+    .bridal-visual {
+        order: 1 !important;
+        display: block !important;
+        width: 100% !important;
+        transform: none !important;
+    }
+
+    .bridal-image-wrapper {
+        aspect-ratio: 4/3 !important;
+        max-height: 280px !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .bridal-image {
+        width: 100% !important;
+        height: 100% !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    .bridal-accent,
+    .bridal-floating-orb {
+        display: none !important;
+    }
+
+    .bridal .btn {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .bridal-features {
+        text-align: left !important;
+        max-width: 100% !important;
+        margin: 0 auto 24px !important;
+        padding: 0 16px !important;
+    }
+
+    /* Hours Banner - Fix layout to stack properly */
+    .hours-banner {
+        padding: 24px 16px !important;
+    }
+
+    .hours-banner-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 16px !important;
+    }
+
+    .hours-banner-title {
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 8px !important;
+        order: 1 !important;
+    }
+
+    .hours-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 12px !important;
+        width: 100% !important;
+        order: 2 !important;
+    }
+
+    .hours-day {
+        flex: 1 1 45% !important;
+        max-width: 150px !important;
+        padding: 12px !important;
+    }
+
+    .hours-banner-footer {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin-top: 16px !important;
+        width: 100% !important;
+        order: 3 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hours-grid {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .hours-day {
+        width: 80% !important;
+        max-width: 200px !important;
+        flex: none !important;
+    }
+
+    .about-image-frame {
+        max-height: 200px !important;
+    }
+
+    .bridal-image-wrapper {
+        max-height: 220px !important;
+    }
+}
